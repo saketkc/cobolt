@@ -31,7 +31,8 @@ setuptools.setup(
         'sklearn',
         'xgboost',
         'seaborn',
-        'leidenalg'
+        'leidenalg',
+        'tqdm'
     ],
     #package_dir={"": "cobolt"},
     python_requires=">=3.7",
