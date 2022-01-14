@@ -22,14 +22,20 @@ setuptools.setup(
     ],
     install_requires=[
         'numpy',
+        'pandas',
+        'matplotlib',
         'scipy',
         'torch',
         'umap-learn',
         'python-igraph',
         'sklearn',
-        'xgboost'
+        'xgboost',
+        'seaborn',
+        'leidenalg'
     ],
-    package_dir={"": "cobolt"},
-    packages=setuptools.find_packages(where="cobolt"),
+    #package_dir={"": "cobolt"},
     python_requires=">=3.7",
+    packages=["cobolt"],
+    zip_safe=False,
+    include_package_data=True,
 )
